@@ -1,22 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import HelloProps from './components/HelloProps/HelloProps';
+import Counter from './components/Counter/Counter';
+import CounterProps from './components/CounterProps/CounterProps';
+import Gallery from './components/Gallery/Gallery';
+import Tab from './components/Tab/Tab'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <HelloProps textToShow="Hello World"></HelloProps>
+      <Counter></Counter>
+      <CounterProps defaultNumber={10}></CounterProps>
+      <Gallery></Gallery>
+      <Tab tabs={[
+        {title: 'Tab1', content: 'Soy el contenido de un tab'},
+        {title: 'Tab2', content: 'Soy el contenido de un tab'},
+        {title: 'Tab3', content: 'Soy el contenido de un tab'}]}></Tab>
       </header>
     </div>
   );

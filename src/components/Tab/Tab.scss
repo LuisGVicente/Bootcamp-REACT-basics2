@@ -1,0 +1,12 @@
+.c-tab {
+    &__tab{
+        border-bottom: 2px solid #ffffff;
+        color: #ffffff;
+        padding: 4px;
+        cursor: pointer;
+        &--active{
+            background-color: #ffffff;
+            color: #282c34;
+        }
+    }
+}
